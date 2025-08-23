@@ -411,6 +411,7 @@ dependencies = [
 name = "ina228"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "embedded-hal",
  "linux-embedded-hal",
  "tracing",
