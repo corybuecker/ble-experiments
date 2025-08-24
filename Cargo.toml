@@ -1,3 +1,9 @@
 [workspace]
 resolver = "3"
-members = ["subscriber", "ina228"]
+members = ["subscriber", "ina228", "ina228-from-pico-2w"]
+
+[profile.dev]
+debug = 2
+debug-assertions = true
+opt-level = 2
+overflow-checks = true
