@@ -3,7 +3,6 @@
 
 mod common;
 
-use core::mem;
 use defmt::{debug, info, unwrap};
 use embassy_executor::Spawner;
 use embassy_nrf::config;
@@ -11,8 +10,8 @@ use nrf_softdevice::{
     Softdevice,
     ble::{
         advertisement_builder::{
-            Flag, LegacyAdvertisementBuilder, LegacyAdvertisementPayload, ServiceList,
-            ServiceUuid16,
+            ExtendedAdvertisementBuilder, Flag, LegacyAdvertisementBuilder,
+            LegacyAdvertisementPayload, ServiceList, ServiceUuid16,
         },
         peripheral,
     },
